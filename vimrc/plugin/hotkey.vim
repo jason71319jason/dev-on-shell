@@ -29,17 +29,12 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 
-" normal mode
-noremap <leader>= <C-[>
-inoremap <leader>= <Esc>
-
-" vim-completion
-inoremap <leader>] <C-P>
-inoremap <leader>[ <C-N>
-
 " vim-auto-indent
 nnoremap <F8> gg=G''
 
+" normal mode
+imap jj <C-[>
+
 " add empty line
-nnoremap <leader>[ O<Esc>
-nnoremap <leader>] o<Esc>
+nnoremap iO O<Esc>
+nnoremap io o<Esc>

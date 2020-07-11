@@ -30,11 +30,12 @@ if [ -L $VIMRC ]||[ -f $VIMRC ]; then
     fi
 fi
 
-hash git >/dev/null && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || {
-    echo "Install Git first"
+if [ ! -f ~/.vim/bundle/Vundle.vim ]; then
+    hash git >/dev/null && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || {
+        echo "Install Git first"
     exit
 }
-
+fi
 cp -r ./plugin $VIM_FOLDER
 cp -r ./init $VIM_FOLDER
 cp -r ./colors $VIM_FOLDER
