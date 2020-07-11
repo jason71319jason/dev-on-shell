@@ -10,7 +10,7 @@ if [ -d $HOME/.vim ]; then
     read -p "Would you like to backup your .vim folder first? [y/n] " ans
 
     if [ "$ans" == "y" ]; then
-        mv -r $VIM_FOLDER $VIM_FOLDER-$(date +%Y%m%d)-$RAND
+        mv $VIM_FOLDER $VIM_FOLDER-$(date +%Y%m%d)-$RAND
     else
         echo "You have a $VIM_FOLDER now, please backup this first."
         exit
@@ -30,12 +30,13 @@ if [ -L $VIMRC ]||[ -f $VIMRC ]; then
     fi
 fi
 
-if [ ! -f ~/.vim/bundle/Vundle.vim ]; then
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     hash git >/dev/null && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || {
         echo "Install Git first"
     exit
 }
 fi
+
 cp -r ./plugin $VIM_FOLDER
 cp -r ./init $VIM_FOLDER
 cp -r ./colors $VIM_FOLDER

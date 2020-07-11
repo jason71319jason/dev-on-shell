@@ -19,12 +19,11 @@ set incsearch
 
 " Color
 try
-    set background=dark
-    colorscheme gruvbox
-    highlight EndOfBuffer cterm=NONE ctermfg=bg ctermbg=bg
+set background=dark
+colorscheme gruvbox
+highlight EndOfBuffer cterm=NONE ctermfg=bg ctermbg=bg
 catch
 endtry
-
 syntax on
 
 " disable sound
