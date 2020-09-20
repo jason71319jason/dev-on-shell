@@ -1,2 +1,3 @@
-
-source ~/.vim/init/vundle.vim
+source ~/.vim/init/plugin.vim
+source ~/.vim/init/appearance.vim
+source ~/.vim/init/setting.vim

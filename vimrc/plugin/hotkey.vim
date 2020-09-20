@@ -2,7 +2,9 @@
 " F1~12
 " nerdtreeToggle <F2>
 nnoremap <F4> :qa<CR>
-" auto indent <F8>
+
+" vim-auto-indent
+nnoremap <F8> gg=G''
 nnoremap <F12> :set nu!<CR>
 
 " tab
@@ -28,13 +30,3 @@ inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
-
-" vim-auto-indent
-nnoremap <F8> gg=G''
-
-" normal mode
-imap jj <C-[>
-
-" add empty line
-nnoremap iO O<Esc>
-nnoremap io o<Esc>

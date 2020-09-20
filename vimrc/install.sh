@@ -37,6 +37,11 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 }
 fi
 
+if [ -z "$( apt list 2>/dev/null | grep fonts-powerline )" ]; then
+    echo "Install fonts-powerline"
+    sudo apt-get install fonts-powerline
+fi
+
 cp -r ./plugin $VIM_FOLDER
 cp -r ./init $VIM_FOLDER
 cp -r ./colors $VIM_FOLDER

@@ -29,16 +29,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 
-" Multi-cursor
-Plugin 'terryma/vim-multiple-cursors'
-
 " Linting
 Plugin 'dense-analysis/ale'
 
 " Faster Search
 set rtp+=~/.fzf
 Plugin 'junegunn/fzf.vim'
-" Plugin 'mileszs/ack.vim'
 
 " SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
