@@ -4,7 +4,7 @@ VIM_FOLDER=$HOME/.vim
 VIMRC=$HOME/.vimrc
 RAND=$RANDOM
 
-if [ -d $HOME/.vim ]; then
+if [ -d $VIM_FOLDER ]; then
 
     echo "You already have a .vim folder in your home directory."
     read -p "Would you like to backup your .vim folder first? [y/n] " ans

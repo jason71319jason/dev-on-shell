@@ -7,5 +7,4 @@ config_fzf() {
     fi
 }
 
-
 config_fzf
