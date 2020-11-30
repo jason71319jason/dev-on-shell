@@ -1,13 +1,14 @@
 #!/bin/bash
 
 BASH_SETTING_DIR=$HOME/.bash_setting
+MYBIN_DIR=$HOME/.mybin
 BASHRC=$HOME/.bashrc
 RAND=$RANDOM
 
 if [ -d $BASH_SETTING_DIR ]; then
 
-    echo "You already have a .vim folder in your home directory."
-    read -p "Would you like to backup your .vim folder first? [y/n] " ans
+    echo "You already have a .bash_setting folder in your home directory."
+    read -p "Would you like to backup your .bash_setting folder first? [y/n] " ans
 
     if [ "$ans" == "y" ]; then
         mv $BASH_SETTING_DIR $BASH_SETTING_DIR-$(date +%Y%m%d)-$RAND
@@ -18,6 +19,7 @@ if [ -d $BASH_SETTING_DIR ]; then
 fi
 
 cp -r bash $BASH_SETTING_DIR
+cp -r bin $MYBIN_DIR
 
 SETTINGS=$(ls $BASH_SETTING_DIR)
 
