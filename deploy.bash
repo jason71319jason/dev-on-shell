@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASH_SETTING_DIR=$HOME/.bash_setting
-MYBIN_DIR=$HOME/.mybin
+BIN_DIR=$HOME/.mybin
 BASHRC=$HOME/.bashrc
 RAND=$RANDOM
 
@@ -19,7 +19,7 @@ if [ -d $BASH_SETTING_DIR ]; then
 fi
 
 cp -r bash $BASH_SETTING_DIR
-cp -r bin $MYBIN_DIR
+cp bin/* $BIN_DIR
 
 SETTINGS=$(ls $BASH_SETTING_DIR)
 

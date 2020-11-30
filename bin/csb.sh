@@ -22,7 +22,7 @@ build_db() {
 append_to_CSCOPE_FILES() {
     local pattern=$1
     echo "Scaning $1"
-    find $PJ_DIR -type f -name $pattern \
+    find $PJ_DIR -type f -name "$pattern" \
         -not -path "*.git/*" \
         >> $PJ_DB_DIR/$CSCOPE_FILES
     }
