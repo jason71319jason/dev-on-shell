@@ -5,7 +5,7 @@ nnoremap <F4> :qa<CR>
 
 " vim-auto-indent
 nnoremap <F8> gg=G''
-nnoremap <F12> :set nu!<CR>
+nnoremap <F9> :set nu!<CR>
 
 " tab
 nnoremap <leader>t :tabe<CR>

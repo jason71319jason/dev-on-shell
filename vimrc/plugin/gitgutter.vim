@@ -24,4 +24,3 @@ endfunction
     
 nmap <silent> <leader>gh :call GitGutterNextHunkCycle()<CR>
 nmap <silent> <leader>gH :call GitGutterPrevHunkCycle()<CR>
-

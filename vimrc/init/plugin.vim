@@ -1,6 +1,6 @@
 " Vundle plugin
 " be IMproved (not compatible vi), required
-set nocompatible              
+set nocompatible
 " disable filetype detection, required
 filetype off
 
@@ -11,13 +11,13 @@ call vundle#begin()
 " Plugin manager
 Plugin 'VundleVim/Vundle.vim'
 
-" File explorer 
+" File explorer
 Plugin 'preservim/nerdtree'
 
 " Fast Comment
 Plugin 'preservim/nerdcommenter'
 
-" Git 
+" Git
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 
@@ -44,6 +44,9 @@ Plugin 'honza/vim-snippets'
 
 " Support
 Plugin 'tpope/vim-repeat'
+
+" Tracer
+Plugin 'yegappan/taglist'
 
 call vundle#end()
 filetype plugin indent on

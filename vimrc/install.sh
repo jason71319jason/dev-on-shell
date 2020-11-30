@@ -42,6 +42,16 @@ if [ -z "$( apt list 2>/dev/null | grep fonts-powerline )" ]; then
     sudo apt-get install fonts-powerline
 fi
 
+if ! hash ctags 2>/dev/null; then
+    echo "To install ctags"
+    sudo apt-get -y install exuberant-ctags
+fi
+
+if ! hash cscope 2>/dev/null; then
+    echo "To install ctags"
+    sudo apt-get -y install cscope
+fi
+
 cp -r ./plugin $VIM_FOLDER
 cp -r ./init $VIM_FOLDER
 cp -r ./colors $VIM_FOLDER
